@@ -50,7 +50,7 @@ import warnings
 from datetime import datetime
 import time
 
-multiomics_df = pd.read_csv('final_clp_multiomics.csv')
+multiomics_df = pd.read_csv('final_clp_multiomics.csv.gz', compression='gzip')
 #multiomics_df = pd.read_csv('final_clp_multiomics_eQTL_based.csv')
 print("Successfully loaded clp_multiomics.csv")
 print(f"Dataset shape: {multiomics_df.shape}")
